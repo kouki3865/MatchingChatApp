@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="mGI-eG-MB0">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="t8H-w1-GAw" customClass="HomeViewController" customModule="MatcingChatApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0ZA-sR-nYM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Matcing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kyH-8A-hPQ">
+                                <rect key="frame" x="115" y="98" width="184" height="58.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="49"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7Q6-nD-w6I"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="kyH-8A-hPQ" firstAttribute="centerX" secondItem="0ZA-sR-nYM" secondAttribute="centerX" id="AdT-MQ-6v4"/>
+                            <constraint firstItem="kyH-8A-hPQ" firstAttribute="top" secondItem="7Q6-nD-w6I" secondAttribute="top" constant="10" id="n4a-3J-NNr"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="jpK-J0-Gc3">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="A52-yj-UOV">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ZDY-1l-vzJ">
+                                <rect key="frame" x="20" y="98" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ZDY-1l-vzJ" secondAttribute="height" multiplier="1:1" id="Ojk-yD-k7F"/>
+                                    <constraint firstAttribute="width" constant="60" id="UcU-CR-wz6"/>
+                                </constraints>
+                                <state key="normal" image="person.fill" catalog="system"/>
+                            </button>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="fXd-b7-7qo">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Wv7-rj-mC7">
+                                <rect key="frame" x="334" y="0.0" width="60" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="YbP-6d-akD"/>
+                                    <constraint firstAttribute="width" secondItem="Wv7-rj-mC7" secondAttribute="height" multiplier="1:1" id="nX6-ao-a3b"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" image="comment1"/>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="ChatButton" destination="Wv7-rj-mC7" id="7uc-0w-0hM"/>
+                        <outlet property="MatcingLabel" destination="kyH-8A-hPQ" id="3DU-04-cfT"/>
+                        <outlet property="profileButton" destination="ZDY-1l-vzJ" id="4TA-gN-rUG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gKx-Jd-V0Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="557.97101449275362" y="827.67857142857144"/>
+        </scene>
+        <!--matcing-->
+        <scene sceneID="EZ5-jt-Exx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fNW-QQ-qhD" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="matcing" image="heart1" id="Ua8-0m-q7V"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="BIw-Hh-wjf">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="t8H-w1-GAw" kind="relationship" relationship="rootViewController" id="r6Q-9n-F66"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DEe-Wl-bK6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-352.17391304347831" y="827.67857142857144"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="comment1" width="32" height="32"/>
+        <image name="heart1" width="16" height="16"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

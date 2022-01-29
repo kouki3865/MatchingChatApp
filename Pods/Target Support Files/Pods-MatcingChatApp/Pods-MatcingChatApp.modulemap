@@ -1,0 +1,6 @@
+framework module Pods_MatcingChatApp {
+  umbrella header "Pods-MatcingChatApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
