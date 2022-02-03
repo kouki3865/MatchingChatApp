@@ -250,6 +250,7 @@
 			isa = PBXGroup;
 			children = (
 				4FC8E7A0279203D100411E4D /* MatcingChatApp */,
+				4FC8E79F279203D100411E4D /* Products */,
 				8136C8B8ECC356B4F37B3F9D /* Pods */,
 				1C9C19249318AA3551527055 /* Frameworks */,
 			);
@@ -261,7 +262,6 @@
 				4FC8E79E279203D100411E4D /* MatcingChatApp.app */,
 			);
 			name = Products;
-			path = ..;
 			sourceTree = "<group>";
 		};
 		4FC8E7A0279203D100411E4D /* MatcingChatApp */ = {
@@ -275,7 +275,6 @@
 				4F4987792792A6F100D67E2E /* ViewControllers */,
 				4FC8E7A1279203D100411E4D /* AppDelegate.swift */,
 				4FC8E7A3279203D100411E4D /* SceneDelegate.swift */,
-				4FC8E79F279203D100411E4D /* Products */,
 				4FC8E7AA279203D200411E4D /* Assets.xcassets */,
 				4FC8E7AC279203D200411E4D /* LaunchScreen.storyboard */,
 				4FC8E7AF279203D200411E4D /* Info.plist */,

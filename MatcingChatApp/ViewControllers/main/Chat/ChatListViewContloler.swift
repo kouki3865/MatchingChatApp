@@ -22,6 +22,7 @@ class ChatListViewContoller: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //ナビゲーションバーの透明を治す
         if #available(iOS 15.0, *){
             let appearance = UINavigationBarAppearance()
             appearance.configureWithOpaqueBackground()
