@@ -22,7 +22,15 @@ class ChatListViewContoller: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        if #available(iOS 15.0, *){
+            let appearance = UINavigationBarAppearance()
+            appearance.configureWithOpaqueBackground()
+            appearance.backgroundColor = UIColor.rgb(red: 227, green: 48, blue: 78)
+            appearance.titleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
+            
+            navigationController?.navigationBar.standardAppearance = appearance
+            navigationController?.navigationBar.scrollEdgeAppearance = appearance
+        }
         setupView()
         
     }
@@ -35,19 +43,14 @@ class ChatListViewContoller: UIViewController {
     
    
     private func setupView(){
-        navigationController?.navigationBar.isHidden = false
-        ChatlistTableView.tableFooterView = UIView()
         
         ChatlistTableView.delegate = self
         ChatlistTableView.dataSource = self
-        
-        navigationController?.navigationBar.barTintColor = .rgb(red: 227, green: 48, blue: 78)
+
         navigationItem.title = "トーク"
-        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor:UIColor.white]
-        
+       
         let  rightBarButton = UIBarButtonItem(title: "新規チャット", style: .plain, target: self, action: #selector(tappedNavRightBarButton))
         navigationItem.rightBarButtonItem = rightBarButton
-        navigationItem.rightBarButtonItem?.tintColor = .white
     }
     
     

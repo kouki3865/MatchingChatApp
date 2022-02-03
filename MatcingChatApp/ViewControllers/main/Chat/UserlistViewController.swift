@@ -22,6 +22,16 @@ class UserlistViewController:UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        if #available(iOS 15.0, *){
+            let appearance = UINavigationBarAppearance()
+            appearance.configureWithOpaqueBackground()
+            appearance.backgroundColor = UIColor.rgb(red: 227, green: 48, blue: 78)
+            appearance.titleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
+            
+            navigationController?.navigationBar.standardAppearance = appearance
+            navigationController?.navigationBar.scrollEdgeAppearance = appearance
+        }
+        
         userlistTableView.tableFooterView = UIView()
         
         userlistTableView.delegate = self
@@ -31,7 +41,6 @@ class UserlistViewController:UIViewController{
         startChatButton.layer.cornerRadius = 10
         startChatButton.addTarget(self, action: #selector(tappedStartButton), for: .touchUpInside)
         
-        navigationController?.navigationBar.barTintColor = .rgb(red: 227, green: 48, blue: 78)
         fetchUserInfoFromFireStore()
 
     }

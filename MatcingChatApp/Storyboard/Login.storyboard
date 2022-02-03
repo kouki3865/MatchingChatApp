@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -100,7 +99,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="iRh-1O-dHs"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="1" green="0.67843137254901964" blue="0.72156862745098038" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="81r-fj-BPY" firstAttribute="top" secondItem="0o1-SK-HXK" secondAttribute="bottom" constant="50" id="8Jw-RQ-uqU"/>
                             <constraint firstItem="81r-fj-BPY" firstAttribute="centerX" secondItem="yy4-UE-R9u" secondAttribute="centerX" id="AKz-kg-EO7"/>
@@ -125,9 +124,4 @@
             <point key="canvasLocation" x="18.840579710144929" y="54.910714285714285"/>
         </scene>
     </scenes>
-    <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
 </document>

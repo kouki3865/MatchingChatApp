@@ -27,12 +27,13 @@ class HomeViewController: UIViewController {
         navigationController?.navigationBar.barTintColor = .rgb(red: 227, green: 48, blue: 78)
         ButtonSetUp()
         setuplayout()
-        fetchHomeInfoFromFireStore()
     }
     
    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        fetchHomeInfoFromFireStore()
+        setuplayout()
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)

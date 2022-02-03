@@ -180,13 +180,6 @@
 			path = Chat;
 			sourceTree = "<group>";
 		};
-		4FBDA07C27971F890059291F /* tabbarcontroller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = tabbarcontroller;
-			sourceTree = "<group>";
-		};
 		4FC2A5982796F364007C935A /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -274,7 +267,6 @@
 		4FC8E7A0279203D100411E4D /* MatcingChatApp */ = {
 			isa = PBXGroup;
 			children = (
-				4FBDA07C27971F890059291F /* tabbarcontroller */,
 				4F2409C42795C31E00B04C4D /* Model */,
 				4F4987782792A6DA00D67E2E /* Extensions */,
 				4F4987872793124600D67E2E /* Storyboard */,
